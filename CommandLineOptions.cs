@@ -110,7 +110,6 @@ namespace SmartCommandLineParser
 				s += "\n";
 			}
 
-
             return s.TrimEnd() + "\n";
 		}
 		
@@ -128,6 +127,14 @@ namespace SmartCommandLineParser
             while (this.Args.Count > 0)
             {
                 ParseElement();
+            }
+
+            foreach (var option in Options)
+            {
+                if (option.Required && !Parameters.ContainsKey(option.Name))
+                {
+                    throw new CommandLineParserException("Required key " + (option.Switches != null ? string.Join(", ", option.Switches) : option.Name) + " is not specified.");
+                }
             }
         }
 
@@ -171,14 +178,6 @@ namespace SmartCommandLineParser
             else
             {
                 while (Args.Count > 0) ParseValue(GetNextNoSwitchOption(), Args[0]);
-            }
-
-            foreach (var option in Options)
-            {
-                if (option.Required && !Parameters.ContainsKey(option.Name))
-                {
-                    throw new CommandLineParserException("Required key " + (option.Switches!=null ? string.Join(", ", option.Switches) : option.Name) + " is not specified.");
-                }
             }
         }
 
