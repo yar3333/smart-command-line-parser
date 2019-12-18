@@ -43,7 +43,7 @@ class Program
 ```
 
 
-Help messsage for above example:
+Help message for above example:
 ```
 	-r, --recursive         Search recursive. Default is false.
 	
@@ -52,5 +52,4 @@ Help messsage for above example:
 	-e, --email             User's email. Can be specified several times.
 	
 	file                    File path. Default is 'bin'.
-	
 ```
