@@ -16,6 +16,7 @@ namespace SmartCommandLineParser
 
         public T Get<T>(string name)
         {
+            if (!Parameters.ContainsKey(name)) throw new KeyNotFoundException("Option '" + name + "' is not defined.");
             return (T)Parameters[name];
         }
 
