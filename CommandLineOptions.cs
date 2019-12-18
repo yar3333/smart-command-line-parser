@@ -120,7 +120,7 @@ namespace SmartCommandLineParser
             ParamWoSwitchIndex = 0;
 			
 	        Parameters = new Dictionary<string, object>();
-            foreach (var opt in Options)
+            foreach (var opt in Options.Where(x => !x.Required))
             {
 			    Parameters[opt.Name] = opt.DefaultValue;
             }
