@@ -133,7 +133,7 @@ namespace SmartCommandLineParser
             {
                 if (option.Required && !Parameters.ContainsKey(option.Name))
                 {
-                    throw new CommandLineParserException("Required key " + (option.Switches != null ? string.Join(", ", option.Switches) : option.Name) + " is not specified.");
+                    throw new CommandLineParserException("Required " + (option.Switches != null ? "option " + string.Join(", ", option.Switches) : "<" + option.Name + ">") + " is not specified.");
                 }
             }
         }
