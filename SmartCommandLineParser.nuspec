@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SmartCommandLineParser</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>yar3333</authors>
+    <owners>yar3333</owners>
+    <license type="expression">Apache-2.0</licenseUrl>
+    <projectUrl>https://github.com/yar3333/smart-command-line-parser</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/yar3333/smart-command-line-parser/master/favicon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Command-line options parser.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>cmd</tags>
+  </metadata>
+</package>
