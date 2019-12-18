@@ -219,7 +219,7 @@ namespace SmartCommandLineParser
             if (opt.Type.IsEnum)
             {
                 EnsureValueExist(s);
-                var v = Enum.Parse(opt.Type, Args[0]);
+                var v = Enum.Parse(opt.Type, Args[0], true);
                 Args.RemoveAt(0);
                 if (!opt.Repeatable) Parameters[opt.Name] = v;
                 else AddRepeatableValue(opt.Name, v);

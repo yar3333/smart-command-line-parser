@@ -6,7 +6,7 @@
     <title>$title$</title>
     <authors>yar3333</authors>
     <owners>yar3333</owners>
-    <license type="expression">Apache-2.0</licenseUrl>
+    <licenseUrl>https://github.com/yar3333/smart-command-line-parser/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/yar3333/smart-command-line-parser</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/yar3333/smart-command-line-parser/master/favicon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
