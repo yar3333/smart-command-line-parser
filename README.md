@@ -6,6 +6,7 @@ Install nuget `SmartCommandLineParser`.
 
 ```c#
 using System;
+using System.Collections.Generic;
 using SmartCommandLineParser;
 
 class Program
@@ -42,7 +43,6 @@ class Program
 		return 0;
 	}
 }
-
 ```
 
 Help message for above example:
