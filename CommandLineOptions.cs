@@ -193,6 +193,15 @@ namespace SmartCommandLineParser
                 else AddRepeatableValue(opt.Name, v);
             }
             else
+            if (opt.Type == typeof(long))
+            {
+                EnsureValueExist(s);
+                var v = long.Parse(Args[0]);
+                Args.RemoveAt(0);
+                if (!opt.Repeatable) Parameters[opt.Name] = v;
+                else AddRepeatableValue(opt.Name, v);
+            }
+            else
             if (opt.Type == typeof(double))
             {
                 EnsureValueExist(s);

@@ -11,8 +11,8 @@
     <iconUrl>https://raw.githubusercontent.com/yar3333/smart-command-line-parser/master/favicon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Command-line options parser.</description>
-    <releaseNotes>Initial release.</releaseNotes>
-    <copyright>Copyright 2019</copyright>
+    <releaseNotes>Support type 'long'.</releaseNotes>
+    <copyright>Copyright 2021</copyright>
     <tags>cmd</tags>
   </metadata>
 </package>
