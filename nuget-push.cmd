@@ -2,7 +2,7 @@
 
 IF [%2]==[] GOTO :help
 
-nuget push SmartCommandLineParser.%1.nupkg %2 -Source https://api.nuget.org/v3/index.json
+nuget push bin\Debug\SmartCommandLineParser.%1.nupkg %2 -Source https://api.nuget.org/v3/index.json
 goto exit
 
 :help

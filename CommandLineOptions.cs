@@ -7,13 +7,11 @@ namespace SmartCommandLineParser
 {
     public class CommandLineOptions
     {
-        List<Option> Options = new List<Option>();
+        List<Option> Options = new();
         List<string> Args;
         int ParamWoSwitchIndex;
         Dictionary<string, object> Parameters;
 	
-		public CommandLineOptions() {}
-
         public T Get<T>(string name)
         {
             if (!Parameters.ContainsKey(name)) throw new KeyNotFoundException("Option '" + name + "' is not defined.");
